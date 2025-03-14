@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pari Investment Limited</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  
+
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+<div class="js-header-wrap ag-header-wrap">
+  <header class="ag-header">
+    <div class="ag-format-container clearfix">
+      <a class="ag-logo_link" href="#">
+        <img class="ag-logo_img" src="../images/parilogo.png" alt="Pari Investment – Company Limited">
+        <div class="ag-logo_tagline">Hr Solutions that <strong class="ag-logo_tagline__strong">work for you </strong></div>
+        <img class="ag-logo_img-mobile" src="../images/parilogo.png" alt="Pari Investment – Company Limited">
+      </a>
+
+      <div class="js-menu_btn-wrap ag-menu_btn-wrap">
+        <div class="ag-menu_btn"></div>
+      </div>
+
+       <!--
+      <div class="ag-navbar-block">
+       <a href="/registration" class="ag-start_btn-reg">Registration</a>
+
+        <div class="ag-start-block">
+          <a href="/login" class="js-start-login_link ag-start-login_link">Log in</a>
+          <div class="js-start-login_panel ag-start-login_panel">
+            <div class="js-start-login_panel-arrow ag-start-login_panel-arrow"></div>
+            <form id="ag-start-login_form" class="ag-start-login_form" action="/login" accept-charset="UTF-8" method="post">
+              <div class="ag-start-login_title-form">Log in</div>
+              <div class="ag-start-login_field">
+                <label class="ag-start-login_label" for="ag-start-login_input-email">Email:</label>
+                <input id="ag-start-login_input-email" class="ag-start-login_input" autofocus="autofocus" name="user[email]" type="email">
+              </div>
+
+              <div class="ag-start-login_field">
+                <label class="ag-start-login_label" for="ag-start-login_input-password">Password:</label>
+                <input id="ag-start-login_input-password" class="ag-start-login_input" name="user[password]" type="password">
+              </div>
+              <div class="ag-start-login_btn-wrap">
+                <input class="ag-start-login_btn" name="login_submit" value="Log in" type="submit">
+                <a href="/password_recovery" class="ag-start-login_link-recover">Forgot your password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        
+      </div>
+ -->
+    </div>
+  </header>
+
+  <div class="js-menu-block ag-menu-block">
+    <div class="ag-format-container">
+      <nav class="js-menu_nav ag-menu_nav">
+       
+
+        <!--
+          <div class="ag-mob-login_box">
+            <a href="/login" class="ag-mob-login_link">Log in</a>
+          </div>
+  -->
+        <ul class="ag-menu_list">
+          <li class="ag-menu_item">
+            <a href="../index.html" class="ag-menu_link-item">Home</a>
+          </li>
+          <li class="ag-menu_item">
+            <a href="about.html" class="ag-menu_link-item">About Us</a>
+          </li>
+          <li class="ag-menu_item ag-menu-parent_item">
+            <a href="../components/services.html" class="js-menu-subcat_title-list ag-menu_link-item ag-menu-subcat_title-list">Our Services</a>
+                  <ul class="js-menu-subcat_list ag-menu-subcat_list">
+                    <li class="ag-menu-subcat_item">
+                      <a href="./ourservices/hrstrategy.html" class="ag-menu-subcat_link-item">HR Strategy Development</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./ourservices/performancemanage.html" class="ag-menu-subcat_link-item">Performance Management & Employee Development
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./ourservices/compliance.html" class="ag-menu-subcat_link-item">Compliance & Policy Development
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./ourservices/employeerelation.html" class="ag-menu-subcat_link-item">Employee Relations & Conflict Resolution
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./ourservices/training.html" class="ag-menu-subcat_link-item">Training & Development
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./ourservices/payroll.html" class="ag-menu-subcat_link-item">Payroll Management
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./ourservices/recruitment.html" class="ag-menu-subcat_link-item">Recruitment Services
+                      </a>
+                    </li>
+                  </ul>
+          </li>
+          <li class="ag-menu_item ag-menu-parent_item">
+            <a href="#services" class="js-menu-subcat_title-list ag-menu_link-item ag-menu-subcat_title-list">Industries We Serve</a>
+                  <ul class="js-menu-subcat_list ag-menu-subcat_list">
+                    <li class="ag-menu-subcat_item">
+                      <a href="./industry/corporate.html" class="ag-menu-subcat_link-item">Corporate</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./industry/healthcare.html" class="ag-menu-subcat_link-item">Healthcare
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./industry/education.html" class="ag-menu-subcat_link-item">Education
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./industry/manufacturing.html" class="ag-menu-subcat_link-item">Manufacturing
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./industry/retail.html" class="ag-menu-subcat_link-item">Retail
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./industry/technology.html" class="ag-menu-subcat_link-item">Technology
+                      </a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./industry/non-profit.html" class="ag-menu-subcat_link-item">Non-Profit
+                      </a>
+                    </li>
+                  </ul>
+          </li>
+          <li class="ag-menu_item ag-menu-parent_item">
+            <a href="#" class="js-menu-subcat_title-list ag-menu_link-item ag-menu-subcat_title-list">Contact Us</a>
+                  <ul class="js-menu-subcat_list ag-menu-subcat_list">
+                    <li class="ag-menu-subcat_item">
+                      <a href="./contact/consultation.html" class="ag-menu-subcat_link-item">Request a Consultation</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./contact/location.html" class="ag-menu-subcat_link-item">Office Locations</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./contact/inquiries.html" class="ag-menu-subcat_link-item">Support & Inquiries</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./contact/faqs.html" class="ag-menu-subcat_link-item">FAQs</a>
+                    </li>
+                  </ul>
+          </li>
+          <li class="ag-menu_item">
+            <a href="career.html" class="ag-menu_link-item">Careers</a>
+          </li>
+          
+          <li class="ag-menu_item ag-menu-parent_item">
+            <a href="#" class="js-menu-subcat_title-list ag-menu_link-item ag-menu-subcat_title-list">Resources</a>
+                  <ul class="js-menu-subcat_list ag-menu-subcat_list">
+                    <li class="ag-menu-subcat_item">
+                      <a href="./resources/whitepapers.html" class="ag-menu-subcat_link-item">White Papers</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./resources/casestudy.html" class="ag-menu-subcat_link-item">Case Studies</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./resources/E-books.html" class="ag-menu-subcat_link-item">E-books</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./resources/hrtools.html" class="ag-menu-subcat_link-item">HR Tools & Templates</a>
+                    </li>
+                    <li class="ag-menu-subcat_item">
+                      <a href="./resources/webinars.html" class="ag-menu-subcat_link-item">Webinars & Events</a>
+                    </li>
+                  </ul>
+          </li>
+         
+          
+          <li class="ag-menu_item ag-menu-parent_item">
+            <a href="#" class="js-menu-subcat_title-list ag-menu_link-item ag-menu-subcat_title-list">Client Portal</a>
+                    <ul class="js-menu-subcat_list ag-menu-subcat_list">
+                    <!--  <li class="ag-menu-subcat_item">
+                        <a href="./client/login.html" class="ag-menu-subcat_link-item">Client Login</a>
+                      </li>
+                      <li class="ag-menu-subcat_item">
+                        <a href="./client/project.html" class="ag-menu-subcat_link-item">Project Dashboard</a>
+                      </li> -->
+                      <li class="ag-menu-subcat_item">
+                        <a href="./client/service.html" class="ag-menu-subcat_link-item">Service Reports</a>
+                      </li>
+                     <!-- <li class="ag-menu-subcat_item">
+                        <a href="./client/billing.html" class="ag-menu-subcat_link-item">Billing & Payments</a>
+                      </li> -->
+                    </ul>
+          </li>
+          <li class="ag-menu_item ag-menu-parent_item">
+            <a href="blog.html" class="js-menu-subcat_title-list ag-menu_link-item ag-menu-subcat_title-list">Blog/News</a>
+                    <ul class="js-menu-subcat_list ag-menu-subcat_list">
+                      <li class="ag-menu-subcat_item">
+                        <a href="./blog/blog.html" class="ag-menu-subcat_link-item">HR Industry Insights
+                        </a>
+                      </li>
+                      <li class="ag-menu-subcat_item">
+                        <a href="./blog/announcement.html" class="ag-menu-subcat_link-item">Company Announcements</a>
+                      </li>
+                      <li class="ag-menu-subcat_item">
+                        <a href="./blog/blog.html" class="ag-menu-subcat_link-item">Latest Trends in HR</a>
+                      </li>
+                      <li class="ag-menu-subcat_item">
+                        <a href="./blog/leadership.html" class="ag-menu-subcat_link-item">Leadership & Development</a>
+                      </li>
+                    </ul>
+          </li>
+        </ul>
+
+        <div class="js-search_btn ag-search_btn"></div>
+        <div class="js-search-block ag-search-block">
+          <form id="ag-search_form" class="ag-search_form" action="#" name="search-form" method="GET">
+            <input name="search_id" value="1" type="hidden">
+            <input name="l10n" value="en" type="hidden">
+            <input name="do_search" value="Y" type="hidden">
+            <div class="ag-search_field">
+                <button id="ag-search_btn-submit" class="ag-search_btn-submit" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input name="query" class="js-search_input ag-search_input" type="text" placeholder="Search..." required>
+                <div class="js-search_btn-close ag-search_btn-close">&times;</div>
+            </div>
+          </form>
+          
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="career-section">
+  <div class="container">
+    <h2 class="animated fadeInDown">Join Our Team</h2>
+    <p class="animated fadeInUp">At Pari Investment Limited, we believe in nurturing talent and providing opportunities for growth.</p>
+    
+    <div class="career-intro">
+      <div class="career-content">
+        <h3 class="animated fadeInLeft">Why Work With Us?</h3>
+        <ul class="animated fadeInRight">
+          <li>Competitive salary and benefits</li>
+          <li>Growth and career advancement</li>
+          <li>Inclusive and diverse culture</li>
+          <li>Professional development programs</li>
+        </ul>
+      </div>
+      <div class="career-image animated zoomIn">
+        <img src="../images/parilogo1.png" alt="Career Team">
+      </div>
+    </div>
+    
+    <div class="job-listings">
+      <h3 class="animated fadeInDown">Current Openings</h3>
+      <div class="job-card animated fadeInUp" onclick="toggleDetails('job1')">
+        <h4>HR Manager</h4>
+        <p>Nairobi, Kenya | Full-time</p>
+        <div id="job1" class="job-details hidden">
+          <table class="job-table">
+            <tr>
+              <th>Responsibilities</th>
+              <th>Qualifications</th>
+            </tr>
+            <tr>
+              <td>Oversee HR operations, manage recruitment, and develop company policies.</td>
+              <td>Bachelor’s degree in HR or related field, 3+ years experience.</td>
+            </tr>
+          </table>
+          <button class="apply-btn" onclick="showPopup()">Apply Now</button>
+        </div>
+      </div>
+      <div class="job-card animated fadeInUp" onclick="toggleDetails('job2')">
+        <h4>Payroll Specialist</h4>
+        <p>Mombasa, Kenya | Full-time</p>
+        <div id="job2" class="job-details hidden">
+          <table class="job-table">
+            <tr>
+              <th>Responsibilities</th>
+              <th>Qualifications</th>
+            </tr>
+            <tr>
+              <td>Process payroll, ensure compliance, and manage employee records.</td>
+              <td>Degree in Accounting or HR, 2+ years experience.</td>
+            </tr>
+          </table>
+          <button class="apply-btn" onclick="showPopup()">Apply Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span class="close" onclick="hidePopup()">&times;</span>
+    <p>Please send your application letter and Cv to <br><br> <strong><a href="mailto:hr@pari.co.ke">hr@pari.co.ke</a></strong></p>
+  </div>
+</div>
+
+<script>
+  function toggleDetails(id) {
+    var details = document.getElementById(id);
+    details.classList.toggle('hidden');
+  }
+
+  function showPopup() {
+    document.getElementById("popup").classList.remove("hidden");
+  }
+
+  function hidePopup() {
+    document.getElementById("popup").classList.add("hidden");
+  }
+</script>
+
+<style>
+  .career-section {
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #ada644, #3b8334);
+    color: white;
+    margin: 50px 10px;
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 767px) {
+      .career-section {
+    margin-top: 100px;
+  }
+}
+  .career-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .career-content, .career-image {
+    width: 48%;
+  }
+  .career-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .job-listings {
+    margin-top: 40px;
+  }
+  .job-card {
+    background: white;
+    color: #333;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .job-card:hover {
+    transform: scale(1.05);
+  }
+  .job-details.hidden {
+    display: none;
+  }
+  .job-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  .job-table th, .job-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  .job-table th {
+    background: #3b8334;
+    color: white;
+  }
+
+  .apply-btn {
+    background: #8e44ad;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+  }
+  .apply-btn:hover {
+    background: #6c3483;
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top */
+    
+  }
+
+  .popup.hidden {
+    display: none;
+  }
+
+  .popup-content {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: red;
+  }
+
+  .animated {
+    animation-duration: 1s;
+  }
+
+  .fadeInDown { animation-name: fadeInDown; }
+  .fadeInUp { animation-name: fadeInUp; }
+  .fadeInLeft { animation-name: fadeInLeft; }
+  .fadeInRight { animation-name: fadeInRight; }
+  .zoomIn { animation-name: zoomIn; }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>Our Vision </h6>
+        <p class="text-justify">To offer World class reliable, result-oriented 
+          efficient and value-added consultancy services to all clients.</p>
+
+        <h6>Our Mission</h6>
+        <p class="text-justify">We are committed to offering reliable, result-oriented,
+           efficient and value-added consultancy services to our varying clients at very 
+           competitive rates.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="./ourservices/recruitment.html">Talent Acquisition</a></li>
+        <li><a href="./ourservices/employeerelation.html">Employee Engagement</a></li>
+        <li><a href="./ourservices/training.html">Leadership Development</a></li>
+        <li><a href="./ourservices/hrstrategy.html">HR Outsourcing</a></li>
+        <li><a href="./ourservices/performancemanage.html">Workforce Strategy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="./contact/location.html">Contact Us</a></li>
+          <li><a href="./career.html">Careers</a></li>
+          <li><a href="./services.html">Our Services</a></li>
+          <li><a href="./blog/blog.html">Blog/News</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by 
+     <a href="#">Pari Investment Company Limited</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- partial -->
+  
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script  src="../javascript/script.js"></script>
+  </body>
+  </html>
+  
